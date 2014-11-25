@@ -1,5 +1,5 @@
 FROM byxorna/rubybase
-MAINTAINER Gabe Conradi <gabe@tumblr.com>
+MAINTAINER Gabe Conradi <gummybearx@gmail.com>
 
 ENV RUBY_VERSION 2.1
 
