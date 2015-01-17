@@ -1,9 +1,5 @@
-# Build Ruby Base
+# Ruby Branches
 
-Contains only RVM+build deps, no actual ruby
-
-    docker build -t byxorna/rubybase --rm .
-
-Or
-
-    ./build.sh byxorna/rubybase:latest
+* ruby-2.1 - byxorna/ruby:latest
+* ruby-2.1 - byxorna/ruby:2.1
+* ruby-1.9 - byxorna/ruby:1.9
