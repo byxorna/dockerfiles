@@ -27,4 +27,6 @@ RUN mkdir -p /usr/src/ruby && \
     libsqlite3-dev libssl-dev && \
   make install && \
   rm -r /usr/src/ruby
+RUN gem install bundler
+WORKDIR /app
 CMD ["irb"]
