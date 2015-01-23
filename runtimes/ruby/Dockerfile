@@ -4,6 +4,7 @@ MAINTAINER Gabe Conradi <gummybearx@gmail.com>
 ENV RUBY_MAJOR_MINOR_VERSION 2.1
 ENV RUBY_VERSION 2.1.5
 RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
+RUN mkdir /app
 
 RUN mkdir -p /usr/src/ruby && \
   ls -la /usr/src/ruby && \
