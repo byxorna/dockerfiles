@@ -5,6 +5,7 @@ ENV RUBY_MAJOR_MINOR_VERSION 1.9
 ENV RUBY_VERSION 1.9.3
 ENV RUBY_PATCH p551
 RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
+RUN mkdir /app
 
 RUN mkdir -p /usr/src/ruby && \
   ls -la /usr/src/ruby && \
