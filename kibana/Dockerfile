@@ -1,6 +1,6 @@
 FROM debian:latest
 MAINTAINER Gabe Conradi <gummybearx@gmail.com>
-ENV KIBANA_VERSION 4.0.0
+ENV KIBANA_VERSION 4.0.1
 RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 RUN curl -SL https://download.elasticsearch.org/kibana/kibana/kibana-${KIBANA_VERSION}-linux-x64.tar.gz | \
   tar xzC /opt
