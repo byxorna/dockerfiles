@@ -7,6 +7,6 @@ RUN curl -SL https://download.elasticsearch.org/kibana/kibana/kibana-${KIBANA_VE
 RUN ln -s /opt/kibana-${KIBANA_VERSION}-linux-x64/config/kibana.yml /etc/kibana.yml
 ENV PATH /opt/kibana-${KIBANA_VERSION}-linux-x64/bin:$PATH
 WORKDIR /opt/kibana-${KIBANA_VERSION}-linux-x64
-EXPOSE 80
-ENTRYPOINT ["kibana","--port","80"]
-CMD ["--config","/etc/kibana.yml"]
+EXPOSE 5601
+ENTRYPOINT ["kibana","--port","5601"]
+CMD ["--help"]
